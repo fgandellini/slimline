@@ -36,6 +36,7 @@ For a fish compatible version of this theme have a look at [slimfish](https://gi
     - [User and Host Info](#user-and-host-info)
     - [AWS Profile Info](#aws-profile-info)
     - [Auto Correction](#auto-correction)
+    - [Async Autoloading](#async-autoloading)
     - [Git Information](#git-information)
         - [Gitline](#gitline)
 - [Example](#example)
@@ -183,6 +184,14 @@ Defines the color of the misspelled string for which is correction is proposed. 
 
 Defines the color of the proposed correction of a misspelled string. Default is `green`.
 
+### Async Autoloading
+
+##### `SLIMLINE_ENABLE_ASYNC_AUTOLOAD`
+
+Defines whether [zsh-async](https://github.com/mafredri/zsh-async) should be automatically
+sourced if it was not already sourced. Disabling the automatic loading is useful if zsh-async
+is installed globally and therefore already loaded (e.g. via antigen or zplugin). Default is `1`.
+
 ### Git Information
 
 ##### `SLIMLINE_ENABLE_GIT`
@@ -212,6 +221,7 @@ source "<path-to-slimline>/slimline.plugin.zsh"
 
 ## Thanks
 
+- [mafredri/zsh-async](https://github.com/mafredri/zsh-async)
 - [sindresorhus/pure](https://github.com/sindresorhus/pure)
 - [sorin-ionescu/prezto](https://github.com/sorin-ionescu/prezto.git)
 
